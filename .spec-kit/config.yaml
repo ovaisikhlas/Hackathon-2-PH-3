@@ -1,0 +1,45 @@
+# Spec-Kit Plus Configuration for Todo Full-Stack Web Application
+project:
+  name: "Todo Full-Stack Web Application - Phase II"
+  version: "1.0.0"
+  description: "Modern, secure, multi-user web application with persistent storage in Neon Serverless PostgreSQL"
+
+directories:
+  specs: "./specs"
+  frontend: "./frontend"
+  backend: "./backend"
+  history: "./history"
+
+features:
+  - name: "task-crud"
+    path: "./specs/features/task-crud.md"
+  - name: "authentication"
+    path: "./specs/features/authentication.md"
+
+api:
+  endpoints: "./specs/api/rest-endpoints.md"
+
+database:
+  schema: "./specs/database/schema.md"
+
+ui:
+  components: "./specs/ui/components.md"
+  pages: "./specs/ui/pages.md"
+
+development:
+  frontend_cmd: "npm run dev"
+  backend_cmd: "uvicorn main:app --reload"
+  compose_cmd: "docker-compose up"
+
+dependencies:
+  frontend:
+    - "Next.js 16+"
+    - "TypeScript"
+    - "Tailwind CSS"
+    - "Better Auth"
+  backend:
+    - "Python FastAPI"
+    - "SQLModel"
+    - "Pydantic"
+  database:
+    - "Neon Serverless PostgreSQL"

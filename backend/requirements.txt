@@ -1,0 +1,17 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.24.0
+sqlmodel>=0.0.18
+sqlalchemy>=1.4.52
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+psycopg2-binary>=2.9.9
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+bcrypt>=4.0.1
+better-exceptions>=0.3.2
+python-multipart>=0.0.6
+langchain>=0.2.14
+langchain-google-genai>=0.0.1
+google-generativeai>=0.7.0
+langchain-core>=0.2.38
+langchain-community>=0.2.14
